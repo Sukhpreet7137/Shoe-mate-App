@@ -3,15 +3,27 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ContextProvider from './ContextAPI/UserContext';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Cart from './components/Cart';
+import { ToastContainer,toast } from 'react-toastify';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const Approuter=createBrowserRouter([
+  {
+    path:"/",
+    element:<App/>
+  },
+  {
+    path:"/cart",
+    element:<Cart/>
+  }
+])
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <ContextProvider>
+      <ToastContainer/>
+      <RouterProvider router={Approuter}/>
+    </ContextProvider>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
