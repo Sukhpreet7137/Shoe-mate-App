@@ -1,6 +1,7 @@
 Shoe Mate Website is developed using React which can show shoe products with images and details, provide login and signup features and lastly help customers to add and check out products from their cart. The site also uses Tailwind-css which has provided the site with a beautiful and interactive user interface.
 
-![Alt text](image.png)
+
+![txtt](https://github.com/Sukhpreet7137/Shoe-mate-App/assets/101046716/a54de749-10d0-4398-ae14-49a3c409e54d)
 
 Features of Shoes E-commerce Website:
 Login Page
